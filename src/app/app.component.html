@@ -1,0 +1,77 @@
+<body>
+  <div class="navbar">
+    <div class="grid">
+      <div class="logo-container">
+        <div class="logo">
+          <p-image
+            src="/assets/robotic-arm.png"
+            alt="icon"
+            width="40"
+          />Computer Engineer
+        </div>
+      </div>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li>
+            <a href="#home" routerLink="/home" routerLinkActive="active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about" routerLink="/about" routerLinkActive="active"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a href="#intern" routerLink="/intern" routerLinkActive="active"
+              >Internship</a
+            >
+          </li>
+          <li>
+            <a href="#contact" routerLink="/contact" routerLinkActive="active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<div class="content">
+  <div class="grid-pic ml-auto mr-auto">
+    <div class="col-6">
+      <div class="font-italic">
+        <p class="font-semibold text-5xl mt-3 mb-3">Watcharawit Saejung</p>
+        <p class="text-base text-justify font-normal line-height-3">
+          Graduated with a Bachelor's degree in Computer Engineering from Prince
+          of Songkla University. Committed to developing oneself as a computer
+          engineer with expertise in both knowledge and technical skills, while
+          continuously learning new technologies and innovations. Aspires to be
+          part of a progressive organization with a significant role in creating
+          innovations, ready to utilize knowledge and potential to maximize
+          organizational benefits. Eager to embrace new experiences for personal
+          growth and to develop alongside the organization in the long term.
+        </p>
+        <p-button
+          label="Contact Me"
+          [rounded]="true"
+          severity="help"
+          routerLink="/contact"
+        />
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card flex justify-content-center my-8">
+        <img
+          src="/assets/profile.jpg"
+          alt="Profile Image"
+          width="200"
+          height="244"
+          class="border-round-2xl"
+        />
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
